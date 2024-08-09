@@ -41,7 +41,8 @@ Open Your Browser: Navigate to http://localhost:3000 to view the application.
 
 Choose a Ring: Click the "Choose" button for one of the rings to see if it is more expensive than the other.
 View Results: Check the result message and your current score after making a choice.
-Project Structure
+
+#Project Structure
 
 src/ - Contains the React components and application logic.
 App.js - Main application component.
