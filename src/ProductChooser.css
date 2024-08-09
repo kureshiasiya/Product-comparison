@@ -1,0 +1,177 @@
+/* General body styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9; /* Light background color for the entire page */
+  color: #333; /* Dark text color for better readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.product-chooser {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+/* Flex container for products */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Heading styling */
+.heading {
+  font-size: 24px;
+  color: #c23b3b;
+  margin-bottom: 20px;
+}
+
+/* Flex container for products */
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative; /* Required for absolute positioning of VS */
+}
+
+/* Individual product box styling */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Rounded corners for a softer look */
+  padding: 20px;
+  max-width: 500px; /* Slightly larger width for a more elegant box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333; /* Text color */
+  margin: 10px; /* Margin between boxes */
+}
+
+/* Background color for the first product box */
+.product-1 {
+  background-color: #f4a261; /* Light orange */
+}
+
+/* Background color for the second product box */
+.product-2 {
+  background-color: #2a9d8f; /* Teal */
+}
+
+/* Other styling remains the same */
+
+/* Product heading styling */
+.product-heading {
+  font-size: 18px;
+  color: #222;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Product image styling */
+.product img {
+  width: 180px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Light shadow for image */
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px; /* Rounded button corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Description styling */
+.description {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #333; /* Dark text color for readability */
+  text-align: center;
+  line-height: 1.5;
+}
+.description-item {
+  font-size: 15px;
+  color: #333; /* Dark text color for readability */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5; /* Line height for readability */
+  margin: 5px 0; /* Space between lines */
+}
+
+/* Result message styling */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #007bff; /* Color to make the result stand out */
+  text-align: center;
+}
+
+/* Score styling */
+.score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333; /* Color for the score text */
+  text-align: center;
+}
+
+/* VS Text container styling */
+.vs-container {
+  position: absolute; /* Position VS text relative to the container */
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Center the VS text */
+  background-color: #fff; /* Background color to cover any product overlap */
+  padding: 10px;
+  border-radius: 50%; /* Circular background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the VS circle */
+  margin-left: 50px;
+}
+
+.vs-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd; /* Light background color for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Text color */
+  border: 2px solid #333; /* Border color */
+  margin-left: 4px;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vs-text {
+    width: 40px; /* Smaller circle on mobile */
+    height: 40px; /* Smaller circle on mobile */
+    font-size: 20px; /* Smaller text on mobile */
+  }
+}
