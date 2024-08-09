@@ -18,7 +18,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/product-chooser-app.git
+git clone https://github.com/kureshiasiya/Product-comparison
 Navigate to the Project Directory:
 
 bash
