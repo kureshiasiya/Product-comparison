@@ -163,6 +163,7 @@ button:hover {
   margin-left: 4px;
 }
 /* Responsive design for smaller screens */
+/* Responsive design for smaller screens */
 @media (max-width: 600px) {
   .product-container {
     flex-direction: column;
@@ -170,8 +171,14 @@ button:hover {
   }
 
   .vs-text {
-    width: 40px; /* Smaller circle on mobile */
-    height: 40px; /* Smaller circle on mobile */
-    font-size: 20px; /* Smaller text on mobile */
+    order: -1; /* Move the VS text above the boxes */
+    margin: 10px 0; /* Add some margin above and below */
+  }
+  .vs-container {
+    display: flex; /* Ensure it uses flex layout */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    margin: 20px 0; /* Add vertical margin for spacing */
+    margin-top: 400px;
   }
 }
