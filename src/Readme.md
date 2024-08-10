@@ -20,7 +20,7 @@ bash
 Copy code
 git clone https://github.com/your-username/product-chooser-app.git
 Navigate to the Project Directory:
-Netlify Deployment: asiya-product-comparison.netlify.app
+Netlify Deployment:asiya-product-comparison.netlify.app
 
 bash
 Copy code
